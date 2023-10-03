@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load crispy_forms_tags %}
+
+{% block title %}
+    login
+{% endblock %}
+
+
+
+{% block body %}
+<!-- login section start -->
+<section class="login py-5" id="login">
+    <div class="container-lg my-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 text-center py-5">
+                <h2 class="fw-bold">Log In</h2>
+            </div>
+        </div>
+        <div class="row align-items-center py-5 my-3 justify-content-center">
+            <div class="col-lg-5">
+                <img src="{% static 'images/login.svg' %}" width="400" height="400" class="img img-fluid rounded" alt="login img">
+            </div>
+            <div class="col-lg-5">
+                <form action="" method="post">
+                    {% csrf_token %}
+                    <!-- <div class="form-group mb-4">
+                        <label for="inputusername" class="form-label visually-hidden">Username</label>
+                        <input type="text" class="form-control" name="username" id="inputusername" placeholder="Username">
+                    </div>
+                    <div class="form-group mb-4">
+                        <label for="inputpassword" class="form-label visually-hidden">Password</label>
+                        <input type="password" class="form-control" name="password" id="inputpassword" placeholder="Password">
+                    </div> -->
+                    {{ form|crispy }}
+                    <div class="form-group my-4 d-grid gap-2">
+                       <input type="submit" value="Log In" class="btn btn-success">
+                    </div>
+                    <div class="form-group form-text text-center">
+                        <a href="#">Forgotten password?</a>
+                     </div>
+                     <hr>
+                     <div class="form-group mb-4 text-center">
+                        <a href="/signup/" class="btn btn-primary px-5">Create An Account</a>
+                     </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- login section end -->
+{% endblock %}

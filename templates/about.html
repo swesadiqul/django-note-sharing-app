@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+    about
+{% endblock %}
+
+
+
+{% block body %}
+<!-- about section start -->
+<section class="about py-5" id="about">
+    <div class="container-lg my-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 text-center py-5">
+                <h2 class="fw-bold">About Us</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 my-5 text-center">
+                <img src="{% static 'images/about.svg' %}" class="img img-fluid" alt="About-Img">
+                <h1 class="text-center">Notes Sharing</h1>
+                <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <div class="form-text text-center mx-5">
+                   <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel laborum vitae, assumenda eos totam laboriosam, maiores aut autem at ea numquam placeat nisi labore porro cupiditate deleniti quia? Veritatis inventore doloremque iure voluptatum quos quod odio voluptatem culpa officia sit doloribus, rem enim velit tenetur placeat cum autem a itaque repudiandae nam fugiat. Perspiciatis dignissimos incidunt debitis odit beatae vitae enim modi similique culpa earum laudantium soluta eius doloremque sed vel commodi ullam, fugit error quibusdam optio. Unde earum accusantium exercitationem adipisci, dolore impedit iure illo explicabo ab reprehenderit similique vitae, dolorum consequuntur facilis iste velit quaerat sint voluptatibus consequatur!</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- about section end -->
+{% endblock %}

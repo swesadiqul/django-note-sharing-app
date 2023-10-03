@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+    contact
+{% endblock %}
+
+
+
+{% block body %}
+    <!-- contact section start -->
+    <section class="contact py-5" id="contact">
+        <div class="container-lg my-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center py-5">
+                    <h2 class="fw-bold">Contact Us</h2>
+                </div>
+            </div>
+            <div class="row align-items-center justify-content-center">
+                <div class="col-lg-5">
+                    <form action="" method="post">
+                        {% csrf_token %}
+                        <div class="form-group mb-4">
+                            <label for="id_fullname" class="form-label visually-hidden">Full name</label>
+                            <input type="text" class="form-control form-control-lg border-1 shadow-0 fs-6" name="full_name" id="id_fullname" placeholder="Your full name" required>
+                        </div>
+                        <div class="form-group mb-4">
+                            <label for="id_email" class="form-label visually-hidden">Email address</label>
+                            <input type="email" class="form-control form-control-lg border-1 shadow-0 fs-6" name="email" id="id_email" placeholder="Email address" required>
+                        </div>
+                        <div class="form-group mb-4">
+                            <label for="id_message" class="form-label visually-hidden">Message</label>
+                            <textarea class="form-control form-control-lg border-1 fs-6" name="message" id="id_message" cols="30" rows="07" placeholder="Message here..." required></textarea>
+                        </div>
+                        <div class="form-group mb-4">
+                           <button type="submit" class="btn btn-primary">Send Us</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-lg-5">
+                   <div class="contact-img text-center">
+                        <img src="{% static 'images/contact.svg' %}" class=" img img-fluid rounded-circle w-50" alt="My image">
+                   </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- contact section end -->
+{% endblock %}

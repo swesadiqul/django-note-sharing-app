@@ -1,0 +1,176 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block title %}
+    home
+{% endblock %}
+
+
+
+
+{% block body %}
+
+<section class="home py-5" id="home">
+  <div class="container-lg">
+    <div class="row min-vh-100 align-items-center align-content-center">
+      <div class="col-md-6 mt-5">
+        <div class="home-text">
+          <p class="text-muted mb-0 fst-italic">Hello there,</p>
+          <h1 class="fs-1 fw-bold text-uppercase text-primary">Welcome to the</h1>
+          <h2 class="fs-4 text-capitalize text-primary">note sharing platform</h2>
+          <p class="text-muted mt-4">“Every plant, tree, and animal is a blessing and every person has a purpose
+             for living. Courage, curiosity, and generosity produce noble spirits.
+              Enduring life honorably results in wisdom. Knowledge passed down from
+              one generation to the next along with humankind's tradition of performing
+               charitable and self-sacrificing deeds creates principled legacies for
+                future generations to emulate.”
+            ― <span class="fst-italic">Kilroy J. Oldster, Dead Toad Scrolls</span> </p>
+            <a href="#" class="btn btn-primary px-3 mt-3">Share Note</a>
+        </div>
+      </div>
+      <div class="col-md-6 mt-5">
+       <div class="home-img text-center">
+         <img src="{% static 'images/home.svg' %}" class="img img-fluid rounded w-75" alt="home-img">
+       </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- popular notes section start -->
+<section class="popular py-5 bg-light" id="popular">
+  <div class="container-lg py-4">
+   <div class="row justify-content-center">
+     <div class="col-lg-8">
+       <div class="section-title text-center">
+         <h2 class="fw-bold mb-5">What You Share</h2>
+       </div>
+     </div>
+   </div>
+   <div class="row text-center">
+     <div class="col-md-6 col-lg-4 mb-4">
+       <div class="popular-item shadow-sm rounded p-4 bg-white">
+         <div class="icon my-3 text-primary fs-2">
+          <i class="fa-brands fa-node"></i>
+         </div>
+         <h3 class="fs-5 py-2">Node.js</h3>
+         <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+       </div>
+     </div>
+     <div class="col-md-6 col-lg-4 mb-4">
+       <div class="popular-item shadow-sm rounded p-4 bg-white">
+         <div class="icon my-3 text-primary fs-2">
+          <i class="fa-brands fa-react"></i>
+         </div>
+         <h3 class="fs-5 py-2">React</h3>
+         <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+       </div>
+     </div>
+     <div class="col-md-6 col-lg-4 mb-4">
+       <div class="popular-item shadow-sm rounded p-4 bg-white">
+         <div class="icon my-3 text-primary fs-2">
+          <i class="fa-brands fa-python"></i>
+         </div>
+         <h3 class="fs-5 py-2">Python</h3>
+         <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+       </div>
+     </div>
+     <div class="col-md-6 col-lg-4 mb-4">
+       <div class="popular-item shadow-sm rounded p-4 bg-white">
+         <div class="icon my-3 text-primary fs-2">
+            <i class="fa-brands fa-java"></i>
+          </div>
+         <h3 class="fs-5 py-2">Java</h3>
+         <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+       </div>
+     </div>
+     <div class="col-md-6 col-lg-4 mb-4">
+       <div class="popular-item shadow-sm rounded p-4 bg-white">
+         <div class="icon my-3 text-primary fs-2">
+          <i class="fa-brands fa-php"></i>
+         </div>
+         <h3 class="fs-5 py-2">PHP</h3>
+         <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+       </div>
+     </div>
+     <div class="col-md-6 col-lg-4 mb-4">
+       <div class="popular-item shadow-sm rounded p-4 bg-white">
+         <div class="icon my-3 text-primary fs-2">
+          <i class="fa-brands fa-android"></i>
+         </div>
+         <h3 class="fs-5 py-2">Android</h3>
+         <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+       </div>
+     </div>
+   </div>
+  </div>
+</section>
+<!-- popular notes section end -->
+
+<!-- contributors section start -->
+<section class="contributors py-5" id="contributors">
+  <div class="container-lg py-4">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="section-title text-center">
+          <h2 class="fw-bold mb-5">Contributors</h2>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-lg-8 col-xl-7">
+       <div id="carousel1" class="carousel slide" data-bs-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-bs-target="#carousel1" data-bs-slide-to="0" class="active bg-primary" aria-current="true" aria-label="Slide 1"></li>
+          <li data-bs-target="#carousel1" data-bs-slide-to="1" aria-label="Slide 2" class="bg-primary"></li>
+          <li data-bs-target="#carousel1" data-bs-slide-to="2" aria-label="Slide 3" class="bg-primary"></li>
+        </ol>
+        <div class="carousel-inner">
+          <!-- contributors item start -->
+        <div class="contributors-item carousel-item active bg-white shadow-sm rounded p-4 mb-5 text-center">
+          <div class="contributors-info">
+            <img src="{% static 'images/carousel1.png' %}" class="img-thumbnail rounded-circle w-25 mb-2" alt="contributors img">
+            <div class="contributor">
+              <h3 class="fs-6 mb-0">Zubayer Rahman</h3>
+              <p class="text-muted">@seo expert</p>
+            </div>
+          </div>
+          <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi et neque iusto error.
+            Fuga, aut explicabo doloribus dolore sint fugiat!</p>
+        </div>
+        <!-- contributors item end -->
+        <div class="contributors-item carousel-item bg-white shadow-sm rounded p-4 mb-5 text-center">
+          <div class="contributors-info">
+            <img src="{% static 'images/carousel2.png' %}" class="img-thumbnail rounded-circle w-25 mb-2" alt="contributors img">
+            <div class="contributor">
+              <h3 class="fs-6 mb-0">Noman Khan</h3>
+              <p class="text-muted">@hr.manager</p>
+            </div>
+          </div>
+          <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi et neque iusto error.
+            Fuga, aut explicabo doloribus dolore sint fugiat!</p>
+        </div>
+        <!-- contributors item end -->
+        <div class="contributors-item carousel-item bg-white shadow-sm rounded p-4 mb-5 text-center">
+          <div class="contributors-info">
+            <img src="{% static 'images/carousel3.jpg' %}" class="img-thumbnail rounded-circle w-25 mb-2" alt="contributors img">
+            <div class="contributor">
+              <h3 class="fs-6 mb-0">Khalid Hasan</h3>
+              <p class="text-muted">@django dev</p>
+            </div>
+          </div>
+          <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi et neque iusto error.
+            Fuga, aut explicabo doloribus dolore sint fugiat!</p>
+        </div>
+        <!-- contributors item end -->
+       </div>
+       </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- contributors section end -->
+{% endblock %}
+

@@ -1,0 +1,47 @@
+/* base css start */
+.nav-link {
+    /* padding-right: 0.5rem !important;
+    padding-left: 0.5rem !important; */
+    margin-left: 30px !important;
+    /* color: dodgerblue !important; */
+	/* text-decoration: none; */
+	/* font-family: 'Poppins',sans-serif; */
+	position: relative;
+}
+.nav-link:before{
+    content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 2px;
+	background-color: dodgerblue;
+	transform: scaleX(0);
+	transform-origin: left;
+	transition: all 0.5s;
+}
+.nav-link::after{
+    content: '';
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 2px;
+	background-color: dodgerblue;
+	transform: scaleX(0);
+	transform-origin: right;
+	transition: all 0.5s;
+}
+.nav-link:hover::before, .nav-link:hover:after{
+    transform: scaleX(1);
+}
+/* base css end */
+
+a i{
+    margin: 10px;
+    font-size: 20px;
+    color: #c7c8cA;
+}
+a i:hover{
+    color: dodgerblue !important;
+}
